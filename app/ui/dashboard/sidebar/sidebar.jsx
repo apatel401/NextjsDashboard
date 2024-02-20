@@ -81,10 +81,10 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <ul className={styles.list}>
-        {menuItems.map((cat) => (
-          <li key={cat.title}>
-            <span className={styles.cat}>{cat.title}</span>
-            {cat.list.map((item) => (
+        {menuItems.map((itemList) => (
+          <li key={itemList.title}>
+            <span className={styles.itemList}>{itemList.title}</span>
+            {itemList.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}
           </li>
